@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis Enrique Del Ángel — Lead Product Engineer | Architectural Millwork & Custom Casework</title>
+  <meta name="description" content="Technical portfolio of Luis Enrique Del Ángel. Concept-to-production engineering for architectural millwork, custom cabinetry, Cabinet Vision CAD/CAM, CNC machine release, and AWI shop drawings for USA & Mexico clients.">
+  <meta property="og:title" content="Luis Enrique Del Ángel — Lead Product Engineer">
+  <meta property="og:description" content="3D CAD Architecture • Cabinet Vision S2M • Biesse & Nanxing CNC • AWI Shop Drawings • DFM/DFA">
+  <meta property="og:type" content="website">
+
+  <!-- CSS & Model Viewer -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+  <!-- 1. Sticky Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand">
+        <span>Luis Enrique Del Ángel</span>
+        <span class="nav-badge">LEAD PRODUCT ENGINEER</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#viewer-3d" class="nav-link">3D Inspection</a></li>
+        <li><a href="#comparison" class="nav-link">DFM & Detailing</a></li>
+        <li><a href="#stack" class="nav-link">Machinery & Stack</a></li>
+        <li><a href="#contact" class="nav-btn">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 2. Hero Section -->
+  <header class="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-tag">
+          <span style="font-size: 1rem;">●</span> ANSI/AWI 0641 COMPLIANT • READY FOR USA REMOTE DETAILED ENGINEERING
+        </div>
+        <h1 class="hero-title">
+          Concept-to-Production Engineering for <span>Architectural Millwork & Casework</span>
+        </h1>
+        <p class="hero-desc">
+          I transform high-end architectural concepts into shop-tested, CNC-nested, error-free fabrication packages. Specialized in <strong>Cabinet Vision Solid</strong>, <strong>Rhinoceros 8</strong>, Screen-to-Machine (S2M) automation, and field tolerance management for custom furniture manufacturers and retail rollout contractors.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            Explore Technical Case Studies ↓
+          </a>
+          <a href="#viewer-3d" class="btn-secondary">
+            Interactive 3D Inspection ⟳
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual Split Card -->
+      <div class="hero-visual">
+        <div class="split-header">
+          <span>FEATURED ITEM: 3018957</span>
+          <span>SPLIT VIEW: RENDER ↔ SECTION</span>
+        </div>
+        <div class="split-image-container">
+          <img src="assets/images/retail_vitrine_hero.png" alt="Luxury Retail Accessory Vitrine 3D Render">
+          <div class="split-overlay-caption">
+            <strong>Custom Luxury Retail Display Vitrine (Parque Arauco)</strong><br>
+            <span style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.78rem;">
+              Calibrated 23/32" Core • Brushed Brass Reveals • 24V SELV / UL LED Layout
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. Key Metrics Counter Banner -->
+  <section class="metrics-banner">
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-val">31<span>+</span></div>
+        <div class="metric-label">Fixture Typologies Delivered</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">13<span>+</span></div>
+        <div class="metric-label">Stores Concurrent Rollout</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">1,200<span>+</span></div>
+        <div class="metric-label">Panels Machined (0 CAM Scrap)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">89.4<span>%</span></div>
+        <div class="metric-label">True-Shape Nesting Yield</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Filter Navigation Section -->
+  <section id="projects" class="filter-section">
+    <div class="filter-pills">
+      <button class="filter-btn active" data-filter="all">All Disciplines</button>
+      <button class="filter-btn" data-filter="retail">Luxury Retail</button>
+      <button class="filter-btn" data-filter="cad-cam">Cabinet Vision & CNC</button>
+      <button class="filter-btn" data-filter="rollout">Retail Rollout</button>
+      <button class="filter-btn" data-filter="residential">Custom Residential</button>
+      <button class="filter-btn" data-filter="automation">Automation & AI</button>
+    </div>
+    <div class="filter-indicator" id="visible-count">Mostrando 6 de 6 casos</div>
+  </section>
+
+  <!-- 5. Case Studies Grid (6 Insignia Cases) -->
+  <main class="cases-grid">
+
+    <!-- CASE 01 -->
+    <article class="case-card" data-category="retail">
+      <div class="case-thumbnail">
+        <img src="assets/images/retail_vitrine_hero.png" alt="Retail Display Fixtures">
+        <span class="case-badge-top">COMMERCIAL RETAIL</span>
+        <span class="case-badge-right">14/14 BLOCKS</span>
+      </div>
+      <div class="case-content">
+        <h2 class="case-title">Luxury Retail Flagship Fixtures & Architectural Millwork Package</h2>
+        <div class="case-sub">Parque Arauco — 31 Items / 68 Fabricated Units</div>
+        <p class="case-desc">
+          Concept-to-production 3D CAD detailing, multi-material engineering (engineered wood, brushed brass, low-iron UV glass), concealed 24V SELV LED routing, and 282.75 m² of high-gloss polyurethane finish envelope.
+        </p>
+        <div class="case-tags">
+          <span class="tag">Rhino 8</span>
+          <span class="tag">AutoCAD</span>
+          <span class="tag">AWI 0641</span>
+          <span class="tag">NOM-001 SELV</span>
+          <span class="tag">Dual Imperial</span>
+        </div>
+        <div class="case-footer">
+          <button class="btn-case-detail" data-open-modal="modal-case-01">Inspect 14-Block Dossier →</button>
+          <a href="javascript:void(0)" onclick="openPdfViewer('assets/pdf/drawing_retail_fixture_1350.pdf', 'Luxury Retail Shop Drawing — 1350 System')" class="btn-quick-pdf">📄 View PDF Plan</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- CASE 02 -->
+    <article class="case-card" data-category="cad-cam">
+      <div class="case-thumbnail">
+        <img src="assets/images/cabinet_vision_clash.png" alt="Cabinet Vision CNC Automation">
+        <span class="case-badge-top">CAD/CAM & CNC</span>
+        <span class="case-badge-right">14/14 BLOCKS</span>
+      </div>
+      <div class="case-content">
+        <h2 class="case-title">Automated Casework CAD/CAM & Direct CNC Plant Release</h2>
+        <div class="case-sub">WF-ING-MAQ-01 SOP — Biesse Rover & Nanxing P2P</div>
+        <p class="case-desc">
+          Direct Screen-to-Machine (S2M) nesting pipeline. Nanxing edgebander pre-mill balancing (+3 mm offset in geometry for ±0.2 mm finished tolerance), barcode part tracking, and the shop-floor "Triple P Protocol".
+        </p>
+        <div class="case-tags">
+          <span class="tag">Cabinet Vision 2024</span>
+          <span class="tag">Biesse Clever CID</span>
+          <span class="tag">Nanxing MPR</span>
+          <span class="tag">Barcode .TLD</span>
+          <span class="tag">Felder Kappa</span>
+        </div>
+        <div class="case-footer">
+          <button class="btn-case-detail" data-open-modal="modal-case-02">Inspect 14-Block Dossier →</button>
+          <a href="javascript:void(0)" onclick="openPdfViewer('assets/pdf/drawing_copy_station_institutional.pdf', 'Institutional Casework — Copy Station Plan')" class="btn-quick-pdf">📄 View PDF Plan</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- CASE 03 -->
+    <article class="case-card" data-category="rollout retail">
+      <div class="case-thumbnail">
+        <img src="assets/images/store_rollout_01.png" alt="Retail Store Rollout">
+        <span class="case-badge-top">RETAIL ROLLOUT</span>
+        <span class="case-badge-right">14/14 BLOCKS</span>
+      </div>
+      <div class="case-content">
+        <h2 class="case-title">National Multi-Store Retail Chain Fixture Detailing & Rollout</h2>
+        <div class="case-sub">Devlyn 2026 Expansion — 13 Nationwide Locations</div>
+        <p class="case-desc">
+          Multi-store plan auditing under strict Evidence-First rules. Engineered wall niche building tolerances (+40 mm W / +20 mm H), LED illuminated shelves with thermal expansion clearance (-3 mm), and standardized 800 mm electrical datums.
+        </p>
+        <div class="case-tags">
+          <span class="tag">Plan Auditing</span>
+          <span class="tag">Store Rollout</span>
+          <span class="tag">Tolerance Rules</span>
+          <span class="tag">Xikú Display</span>
+          <span class="tag">AutoCAD</span>
+        </div>
+        <div class="case-footer">
+          <button class="btn-case-detail" data-open-modal="modal-case-03">Inspect 14-Block Dossier →</button>
+          <a href="javascript:void(0)" onclick="openPdfViewer('assets/pdf/drawing_xiku_display_case.pdf', 'Branded Optical Display Case — Xikú Production Drawing')" class="btn-quick-pdf">📄 View PDF Plan</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- CASE 04 -->
+    <article class="case-card" data-category="residential">
+      <div class="case-thumbnail">
+        <img src="assets/images/kitchen_residential_01.png" alt="Custom Residential Casework">
+        <span class="case-badge-top">CUSTOM CASEWORK</span>
+        <span class="case-badge-right">14/14 BLOCKS</span>
+      </div>
+      <div class="case-content">
+        <h2 class="case-title">High-End Residential Casework, Tolerance Detailing & Quality Control</h2>
+        <div class="case-sub">Zapata 324 & Atlacomulco Residencial — Multi-Unit Luxury</div>
+        <p class="case-desc">
+          Full-scope kitchen and bath casework engineering. Blum Legrabox and AVENTOS integration, convection chimney venting behind built-in refrigerators, and resolution of the shop-floor +5 mm door tolerance drift via Gage Testigo calibration.
+        </p>
+        <div class="case-tags">
+          <span class="tag">Custom Kitchens</span>
+          <span class="tag">Blum Hardware</span>
+          <span class="tag">Gage Testigo</span>
+          <span class="tag">Odoo MRP</span>
+          <span class="tag">AWI Duty Level 3</span>
+        </div>
+        <div class="case-footer">
+          <button class="btn-case-detail" data-open-modal="modal-case-04">Inspect 14-Block Dossier →</button>
+          <a href="javascript:void(0)" onclick="openPdfViewer('assets/pdf/drawing_residential_kitchen.pdf', 'Residential Kitchen Casework Benchmark Drawing')" class="btn-quick-pdf">📄 View PDF Plan</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- CASE 05 -->
+    <article class="case-card" data-category="retail cad-cam">
+      <div class="case-thumbnail">
+        <img src="assets/images/retail_cash_wrap.png" alt="Hospitality & Corporate Millwork">
+        <span class="case-badge-top">HOSPITALITY & OFFICE</span>
+        <span class="case-badge-right">14/14 BLOCKS</span>
+      </div>
+      <div class="case-content">
+        <h2 class="case-title">Commercial Hospitality Casework & Corporate Workstation Systems</h2>
+        <div class="case-sub">Bridge Capital (80 Workstations) & Pastelería 3 Norte</div>
+        <p class="case-desc">
+          Service counters and executive workstations combining structural steel frames, thermoformed acrylic solid surfaces, and removable interior carcases. Full multi-material BOM reconciliation against Odoo ERP item catalogs.
+        </p>
+        <div class="case-tags">
+          <span class="tag">Hospitality Counters</span>
+          <span class="tag">Solid Surface</span>
+          <span class="tag">Steel Sub-Frames</span>
+          <span class="tag">Odoo BOM</span>
+          <span class="tag">Workstations</span>
+        </div>
+        <div class="case-footer">
+          <button class="btn-case-detail" data-open-modal="modal-case-05">Inspect 14-Block Dossier →</button>
+          <a href="javascript:void(0)" onclick="openPdfViewer('assets/pdf/drawing_copy_station_institutional.pdf', 'Corporate Millwork Elevation & Detail Drawing')" class="btn-quick-pdf">📄 View PDF Plan</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- CASE 06 -->
+    <article class="case-card" data-category="automation">
+      <div class="case-thumbnail">
+        <img src="assets/images/texture_full_board.png" alt="Parametric Automation & AI">
+        <span class="case-badge-top">ALGORITHMIC & AI</span>
+        <span class="case-badge-right">14/14 BLOCKS</span>
+      </div>
+      <div class="case-content">
+        <h2 class="case-title">Algorithmic Nesting, Custom UCS Scripting & AI Production Workflows</h2>
+        <div class="case-sub">OpenNest 2.94 • Cabinet Vision JavaScript • Texture Synthesis</div>
+        <p class="case-desc">
+          Automated panel yield optimization (89.4% yield with OpenNest), custom JavaScript UCS standards for automated blind corner dado joinery in Cabinet Vision, and Image Quilting patch synthesis for seamless 1220×2440 mm board textures.
+        </p>
+        <div class="case-tags">
+          <span class="tag">Grasshopper GH</span>
+          <span class="tag">Cabinet Vision UCS</span>
+          <span class="tag">Python 3.13</span>
+          <span class="tag">Image Quilting</span>
+          <span class="tag">MCP Research</span>
+        </div>
+        <div class="case-footer">
+          <button class="btn-case-detail" data-open-modal="modal-case-06">Inspect 14-Block Dossier →</button>
+          <a href="javascript:void(0)" onclick="openPdfViewer('assets/pdf/gantt_incident_report.pdf', 'GanttCraft & Incident Resolution Report')" class="btn-quick-pdf">📄 View Metrics Report</a>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- 6. Interactive 3D Model Inspection Section -->
+  <section id="viewer-3d" class="viewer-section">
+    <div class="viewer-container">
+      <div class="viewer-info">
+        <div class="hero-tag" style="margin-bottom: 0.75rem;">WEBGL 3D DIGITAL TWIN</div>
+        <h2>Interactive 3D Casework Inspection</h2>
+        <p>
+          Inspect full-scale cabinet assemblies directly in your browser. Rotate, zoom, and inspect joinery clearances without downloading CAD files. Optimized for mobile and AR inspection via Google <code>&lt;model-viewer&gt;</code>.
+        </p>
+        <div class="viewer-specs">
+          <div class="spec-box">
+            <div class="spec-box-title">Mesh Geometry</div>
+            <div class="spec-box-val">Calibrated 19mm Shell</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-box-title">Joinery System</div>
+            <div class="spec-box-val">Full 32mm System Holes</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-box-title">PBR Material</div>
+            <div class="spec-box-val">Walnut Veneer & Brass</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-box-title">File Size</div>
+            <div class="spec-box-val">&lt; 15 KB (High Speed)</div>
+          </div>
+        </div>
+        <a href="#contact" class="btn-secondary" style="font-size: 0.88rem;">
+          Request Custom GLB 3D Submittal Models →
+        </a>
+      </div>
+
+      <div class="model-wrapper">
+        <div class="model-overlay-badge">
+          <span>●</span> 3D ROTATABLE
+        </div>
+        <model-viewer src="assets/models/casework_display.glb"
+                      alt="3D Casework Model Inspection"
+                      auto-rotate
+                      camera-controls
+                      shadow-intensity="1.2"
+                      exposure="1.0"
+                      interaction-prompt="auto">
+        </model-viewer>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Image Comparison Slider (DFM & Detailing) -->
+  <section id="comparison" class="slider-section">
+    <div class="slider-wrapper">
+      <div class="slider-header">
+        <div class="hero-tag" style="margin-bottom: 0.75rem;">DFM PRECISION AUDIT</div>
+        <h2>Concept Render vs. As-Built Commercial Reality</h2>
+        <p>Drag the slider to compare the 4K photorealistic architectural render against the actual manufactured and installed commercial store furniture.</p>
+      </div>
+
+      <div class="comparison-container" id="comparison-slider">
+        <img class="comparison-image" src="assets/images/store_rollout_03.png" alt="As-Built Installed Retail Store">
+        <div class="comparison-overlay" id="comparison-overlay">
+          <img src="assets/images/retail_vitrine_hero.png" alt="Concept 3D Render">
+        </div>
+        <div class="comparison-handle" id="comparison-handle">⟷</div>
+        <div class="comparison-label label-left">CONCEPT RENDER (4K)</div>
+        <div class="comparison-label label-right">FABRICATED & INSTALLED STORE</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Machinery & Technical Stack Section -->
+  <section id="stack" class="stack-section">
+    <div class="stack-header">
+      <div class="hero-tag" style="margin-bottom: 0.75rem;">CORE CAPABILITIES</div>
+      <h2>Production Software & CNC Machinery Expertise</h2>
+      <p>I speak the language of the shop floor. My drawings and CAM releases are calibrated for actual machine tool feeds, pre-milling offsets, and tooling RPMs.</p>
+    </div>
+
+    <div class="stack-grid">
+      <div class="stack-card">
+        <div class="stack-icon">📐</div>
+        <h3 class="stack-title">Cabinet Vision 2024 & S2M</h3>
+        <p class="stack-desc">Advanced catalog customization, UCS (User Created Standards) JavaScript rules, dynamic parametric variables, and Screen-to-Machine nesting optimization.</p>
+      </div>
+      <div class="stack-card">
+        <div class="stack-icon">⚙️</div>
+        <h3 class="stack-title">Biesse Rover / Clever CNC</h3>
+        <p class="stack-desc">Generation of native CID and NC machine code for 3-axis flat-table nesting routers, vacuum bridge balancing, and lead-in/lead-out feed rate optimization.</p>
+      </div>
+      <div class="stack-card">
+        <div class="stack-icon">🎯</div>
+        <h3 class="stack-title">Nanxing NCB2412S P2P</h3>
+        <p class="stack-desc">Horizontal and vertical boring programs (MPR format) for modular dowel, Minifix cam-and-pin, and 32mm system shelf pin hole arrays.</p>
+      </div>
+      <div class="stack-card">
+        <div class="stack-icon">🪚</div>
+        <h3 class="stack-title">Felder Kappa Beam Saw</h3>
+        <p class="stack-desc">Optimized primary rip and crosscut saw cut lists, scoring blade alignment parameters, and grain direction enforcement across sheet panels.</p>
+      </div>
+      <div class="stack-card">
+        <div class="stack-icon">🦏</div>
+        <h3 class="stack-title">Rhinoceros 8 & Grasshopper</h3>
+        <p class="stack-desc">Freeform organic surface modeling, OpenNest 2.94 irregular shape panel optimization, and automated 2D fabrication drawing extraction.</p>
+      </div>
+      <div class="stack-card">
+        <div class="stack-icon">📊</div>
+        <h3 class="stack-title">Odoo ERP & MRP Integration</h3>
+        <p class="stack-desc">Automated Bill of Materials (BOM) multi-level importing from Cabinet Vision RTF outputs, routing operations, and manufacturing order scheduling.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Frictionless Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-card">
+      <div class="contact-tag">ZERO FRICTION • READY FOR SUBCONTRACTING</div>
+      <h2 class="contact-title">Let's Discuss Your Detailing & CAD/CAM Capacity</h2>
+      <p class="contact-sub">
+        Whether you need an overflow engineer for AWI shop drawing submittals, Cabinet Vision S2M nesting packages, or parametric 3D modeling, I am ready to deliver.
+      </p>
+      <div class="contact-buttons">
+        <button class="btn-contact-main" onclick="copyContactEmail('luisdelangel.engineering@gmail.com')">
+          📋 Copy Direct Email (Instant)
+        </button>
+        <a href="https://wa.me/525500000000?text=Hello%20Luis,%20I%20reviewed%20your%20Engineering%20Portfolio%20and%20would%20like%20to%20discuss%20a%20project." 
+           target="_blank" rel="noopener" class="btn-contact-alt">
+          💬 WhatsApp Direct
+        </a>
+        <a href="mailto:luisdelangel.engineering@gmail.com?subject=Inquiry%3A%20Millwork%20Shop%20Drawing%20%26%20CAD%2FCAM%20Services&body=Hello%20Luis%2C%0A%0AWe%20reviewed%20your%20portfolio%20and%20would%20like%20to%20request%20a%20quote%20for%3A%0A-%20Project%20Type%3A%20%5BRetail%20Fixtures%20%2F%20Custom%20Casework%20%2F%20Rollout%5D%0A-%20Estimated%20Timeline%3A%0A-%20CAD%20Platform%3A%20%5BCabinet%20Vision%20%2F%20AutoCAD%20%2F%20Rhino%5D%0A%0AThank%20you!" class="btn-contact-alt">
+          ✉️ Send Inquiry Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast Notification -->
+  <div id="toast-notification" class="toast">
+    <span>✓</span> Email copied to clipboard: <strong>luisdelangel.engineering@gmail.com</strong>
+  </div>
+
+  <!-- 10. MODAL SYSTEM (Full 14-Block Technical Dossiers) -->
+  <div id="modal-backdrop" class="modal-backdrop">
+
+    <!-- MODAL CASE 01: LUXURY RETAIL -->
+    <div id="modal-case-01" class="modal-dialog" style="display: none;">
+      <div class="modal-header">
+        <h3 class="modal-title">Luxury Retail Flagship Fixtures & Architectural Millwork Package</h3>
+        <button class="modal-close" data-modal-close>&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">01 & 02 • At-a-Glance Metadata & Executive Scope</div>
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item"><div class="modal-meta-label">Client Tipology</div><div class="modal-meta-val">Luxury Commercial Retail</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Total Scope</div><div class="modal-meta-val">31 Typologies / 68 Units</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Finish Envelope</div><div class="modal-meta-val">282.75 m² Lacquer & HPL</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Standard</div><div class="modal-meta-val">ANSI/AWI 0641 Custom Grade</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Electrical</div><div class="modal-meta-val">24V DC SELV (UL-Compliant)</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Unit System</div><div class="modal-meta-val">Dual: US Imperial + Metric Ref</div></div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">03 & 04 • Brief, Spatial Constraints & Design Intent</div>
+          <p>The client required shop drawings and parametric BOM for 31 custom millwork items in a flagship mall boutique. Zero floor penetrations were permitted; island fixtures incorporated structural steel ballast plates to counteract cantilevered tempered glass vitrine loads without anchoring into mall slabs.</p>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">05 & 06 • 3D CAD Architecture & Substrates</div>
+          <p>Organized in Rhino 8 across 5 isolated sub-assembly layers:</p>
+          <table class="modal-table">
+            <tr><th>Layer Name</th><th>Material & Calibrated Thickness</th><th>Manufacturing Purpose</th></tr>
+            <tr><td><code>01_STRUCTURAL_FRAME</code></td><td>23/32" (18.3 mm actual) Veneer Core Plywood</td><td>Internal CNC dadoed structural skeleton</td></tr>
+            <tr><td><code>02_EXTERIOR_SKIN</code></td><td>1/2" (12 mm) Ultra-Refined MDF</td><td>Substrate for high-gloss polyurethane lacquer</td></tr>
+            <tr><td><code>03_METAL_ACCENTS</code></td><td>16-Gauge Brushed Architectural Brass</td><td>Concealed stud mounting with shadow reveals</td></tr>
+            <tr><td><code>04_GLAZING_VITRINE</code></td><td>3/8" (10 mm) Low-Iron Tempered Glass</td><td>UV-cured structural adhesive joints</td></tr>
+            <tr><td><code>05_LIGHTING_CHANNELS</code></td><td>5/8" Recessed Aluminum Channels</td><td>Passive heat dissipation for 3000K LED ribbon</td></tr>
+          </table>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">10 & 11 • DFM Resolutions & Shop Floor Verification</div>
+          <p><strong>1. Modular Split:</strong> Cash wraps exceeding 96" were split into interlocking modules with concealed alignment dowels and draw-bolts, fitting inside freight elevators without visible exterior seams.</p>
+          <p><strong>2. Thermal LED Expansion:</strong> Routed channels included a +2mm linear clearance at profile ends to allow aluminum extrusion thermal growth during 14+ hours of continuous daily retail illumination.</p>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn-primary" onclick="openPdfViewer('assets/pdf/drawing_retail_fixture_1350.pdf', 'Luxury Retail Shop Drawing — 1350 System')">Open Full Vector Shop Drawing (PDF)</button>
+          <button class="btn-secondary" data-modal-close>Close Dossier</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL CASE 02: CAD/CAM AUTOMATION -->
+    <div id="modal-case-02" class="modal-dialog" style="display: none;">
+      <div class="modal-header">
+        <h3 class="modal-title">Automated Casework CAD/CAM & Direct CNC Plant Release</h3>
+        <button class="modal-close" data-modal-close>&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">01 & 02 • At-a-Glance Metadata Bar</div>
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item"><div class="modal-meta-label">Primary CAD/CAM</div><div class="modal-meta-val">Cabinet Vision Solid 2024</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">CNC Router</div><div class="modal-meta-val">Biesse Rover / Clever (CID)</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">P2P Boring</div><div class="modal-meta-val">Nanxing NCB2412S (MPR)</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Edgebander Comp.</div><div class="modal-meta-val">+3.0 mm Premill Balancing</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Quality Protocol</div><div class="modal-meta-val">Triple P (Piece, Program, Label)</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Panels Processed</div><div class="modal-meta-val">1,200+ (0 CAM Errors)</div></div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">The Engineering Core: Nanxing Pre-Mill Balancing</div>
+          <p>In standard automated edgebanders, pre-milling diamond cutters remove material before tape application. If the CAD geometry doesn't anticipate this, part dimensions drift by 1 to 2 mm. By locking <code>Premill Edge Banding = 3.0 mm</code> in Cabinet Vision preferences, the router cuts panels 3 mm undersized; the Nanxing cutter strips 3 mm, and the 2 mm PVC tape brings the part to the exact theoretical dimension within <strong>±0.2 mm</strong>.</p>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">Shop Floor Evidence: The Triple P Protocol</div>
+          <p>Before launching batch production on the Biesse CNC, operators snap a photographic record confirming: (1) Physical adhesive label with barcode, (2) Machine console header showing active G-Code, and (3) First machined test piece (<em>Gage Testigo</em>) verified with digital calipers.</p>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn-primary" onclick="openPdfViewer('assets/pdf/drawing_copy_station_institutional.pdf', 'Institutional Casework — Copy Station Plan')">Open Institutional Drawing Set</button>
+          <button class="btn-secondary" data-modal-close>Close Dossier</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL CASE 03: STORE ROLLOUT -->
+    <div id="modal-case-03" class="modal-dialog" style="display: none;">
+      <div class="modal-header">
+        <h3 class="modal-title">National Multi-Store Retail Chain Fixture Detailing & Rollout</h3>
+        <button class="modal-close" data-modal-close>&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">01 & 02 • Project Scope & Multi-Site Coordination</div>
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item"><div class="modal-meta-label">Store Network</div><div class="modal-meta-val">13 Locations (Mitikah, Tepeyac, etc.)</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Extraction Protocol</div><div class="modal-meta-val">Evidence-First / Fail-Closed</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Niche Clearance</div><div class="modal-meta-val">+40 mm W / +20 mm H</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Glass Shelf Deduction</div><div class="modal-meta-val">-3.0 mm LED Wire Clearance</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Electrical Datum</div><div class="modal-meta-val">800 mm to Center Line (CL)</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Shop Efficiency</div><div class="modal-meta-val">85% Components Cut in Continuous Runs</div></div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">Evidence-First Plan Auditing</div>
+          <p>Architectural plans from retail malls frequently contain conflicting drywall dimensions. Under our <em>Fail-Closed</em> rule, ambiguous callouts triggered formal RFIs rather than shop guesses, completely eliminating on-site saw cuts and preventing thousands of dollars in re-cuts.</p>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn-primary" onclick="openPdfViewer('assets/pdf/drawing_xiku_display_case.pdf', 'Branded Optical Display Case — Xikú Production Drawing')">Open Xikú Shop Drawing (PDF)</button>
+          <button class="btn-secondary" data-modal-close>Close Dossier</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL CASE 04: RESIDENTIAL CASEWORK -->
+    <div id="modal-case-04" class="modal-dialog" style="display: none;">
+      <div class="modal-header">
+        <h3 class="modal-title">Custom Residential Casework & Tolerance Engineering</h3>
+        <button class="modal-close" data-modal-close>&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">01 & 02 • High-End Residential Specifications</div>
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item"><div class="modal-meta-label">Carcase Material</div><div class="modal-meta-val">3/4" (18 mm) MR Melamine / PUR</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Hardware System</div><div class="modal-meta-val">Blum Legrabox & AVENTOS HF</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Reveal Standard</div><div class="modal-meta-val">Strict 3.0 mm Gap Consistency</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Leveling Support</div><div class="modal-meta-val">Camar Heavy-Duty Legs & Toe-Kick</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Appliance Integration</div><div class="modal-meta-val">Convection Air Ducts & U-Drawers</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Quality Forensic</div><div class="modal-meta-val">Gage Testigo Tolerance Freeze</div></div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">Case Study: The "Door Retraction" Quality Forensic</div>
+          <p>A quality audit identified a cumulative +5 mm door tolerance drift caused by edgebander pre-milling vibration and humidity uptake. Production was frozen until machine offsets were recalibrated with a physical dummy piece (<em>Gage Testigo</em>), establishing an immutable plant rule that prevented scrap before installation.</p>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn-primary" onclick="openPdfViewer('assets/pdf/drawing_residential_kitchen.pdf', 'Residential Kitchen Casework Benchmark Drawing')">Open Kitchen Drawing (PDF)</button>
+          <button class="btn-secondary" data-modal-close>Close Dossier</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL CASE 05: HOSPITALITY & CORPORATE -->
+    <div id="modal-case-05" class="modal-dialog" style="display: none;">
+      <div class="modal-header">
+        <h3 class="modal-title">Commercial Hospitality Casework & Corporate Workstation Systems</h3>
+        <button class="modal-close" data-modal-close>&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">01 & 02 • Multi-Material Integration</div>
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item"><div class="modal-meta-label">Corporate Scope</div><div class="modal-meta-val">80 Workstations / 8 Executive Suites</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Counter Structure</div><div class="modal-meta-val">1 1/2" Structural Steel Tubing</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Solid Surface</div><div class="modal-meta-val">12 mm Thermoformed Acrylic</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">ERP Integration</div><div class="modal-meta-val">Odoo MRP Multi-Level BOM</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Site Assembly</div><div class="modal-meta-val">Dry-Fit Modular (50% Faster Install)</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Cable Management</div><div class="modal-meta-val">Under-Counter Continuous Raceways</div></div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">Structural Steel & Solid Surface Integration</div>
+          <p>Heavy solid surface countertops transfer dynamic point loads onto service cabinetry. By designing an internal welded tubular steel frame (PTR 14-gauge), acrylic counter joints were isolated from deflection, while wooden cabinet carcases remained fully removable for under-counter plumbing maintenance.</p>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn-primary" onclick="openPdfViewer('assets/pdf/drawing_copy_station_institutional.pdf', 'Corporate Millwork Elevation & Detail Drawing')">Open Corporate Millwork Plan</button>
+          <button class="btn-secondary" data-modal-close>Close Dossier</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL CASE 06: PARAMETRIC & AI -->
+    <div id="modal-case-06" class="modal-dialog" style="display: none;">
+      <div class="modal-header">
+        <h3 class="modal-title">Algorithmic Nesting, Custom UCS Scripting & AI Production Engineering</h3>
+        <button class="modal-close" data-modal-close>&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">01 & 02 • Algorithmic Architecture</div>
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item"><div class="modal-meta-label">Nesting Engine</div><div class="modal-meta-val">Grasshopper OpenNest 2.94</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">CV Scripting</div><div class="modal-meta-val">Custom JavaScript UCS Standards</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Texture AI</div><div class="modal-meta-val">Image Quilting 1220×2440mm</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Sheet Yield</div><div class="modal-meta-val">89.4% (vs 78% Traditional)</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Drafting Speed</div><div class="modal-meta-val">Corner Dado generated in &lt;3s</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Tiling Continuity</div><div class="modal-meta-val">Toroidal 2×2 Mosaic Zero-Seam</div></div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">UCS JavaScript Automation for Blind Dadoes</div>
+          <p>Rather than manually modeling corner cleats in Cabinet Vision, the <code>CERCHA_ESQUINA_UCS_JS.js</code> script detects intersecting wall cabinet boundaries and triggers automatic dado routing and fastener arrays in less than 3 seconds per cabinet assembly.</p>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn-primary" onclick="openPdfViewer('assets/pdf/gantt_incident_report.pdf', 'GanttCraft & Incident Resolution Report')">Open Engineering Incident Metrics Report</button>
+          <button class="btn-secondary" data-modal-close>Close Dossier</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL PDF VIEWER (High-Res Vector Inspection) -->
+    <div id="pdf-viewer-modal" class="modal-dialog" style="display: none; max-width: 1100px;">
+      <div class="modal-header">
+        <h3 class="modal-title" id="pdf-modal-title">Plano de Taller Vectorial</h3>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+          <a id="pdf-download-btn" href="#" download class="btn-primary" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;">⬇ Download PDF</a>
+          <button class="modal-close" data-modal-close>&times;</button>
+        </div>
+      </div>
+      <div class="modal-body" style="padding: 0;">
+        <iframe id="pdf-frame" class="pdf-viewer-frame" src="about:blank"></iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 11. Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-badges">
+        <span class="footer-badge">ANSI/AWI 0641 COMPLIANT</span>
+        <span class="footer-badge">AWI DUTY LEVEL 1–3</span>
+        <span class="footer-badge">EPA TSCA TITLE VI CERTIFIED SUBSTRATES</span>
+        <span class="footer-badge">FORM W-8BEN READY (USA B2B)</span>
+        <span class="footer-badge">ZERO-COST GITHUB PAGES STACK</span>
+      </div>
+      <p>&copy; 2026 Luis Enrique Del Ángel — Lead Product Engineer. Built with open-source web technologies for Google Antigravity & GitHub Pages.</p>
+      <p style="margin-top: 0.5rem; font-size: 0.78rem; color: var(--text-dim);">
+        All client names, trade trademarks, and proprietary shop costs sanitized in compliance with NDA agreements.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript App -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

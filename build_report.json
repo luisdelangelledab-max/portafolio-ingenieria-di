@@ -1,0 +1,28 @@
+{
+  "status": "SUCCESS",
+  "total_cases": 4,
+  "complete_cases": 2,
+  "output_directory": "K:\\Mi unidad\\ANTIGRAVITY BOOK DI\\dist_book",
+  "cases": [
+    {
+      "id": "case_01",
+      "title": "(Insignia Retail / Fixtures Multimaterial)",
+      "blocks": 14
+    },
+    {
+      "id": "case_02",
+      "title": "(Insignia Automatizaci\u00f3n CAD/CAM y Cabinet Vision)",
+      "blocks": 9
+    },
+    {
+      "id": "case_03",
+      "title": "(Insignia Retail Rollout & An\u00e1lisis de Planos)",
+      "blocks": 8
+    },
+    {
+      "id": "case_04",
+      "title": "(Insignia Casework Residencial & Tolerancias de Taller)",
+      "blocks": 11
+    }
+  ]
+}
