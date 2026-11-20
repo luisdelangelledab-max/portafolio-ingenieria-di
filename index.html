@@ -189,7 +189,7 @@
         </div>
         <div class="case-footer">
           <button class="btn-case-detail" data-open-modal="modal-case-03">Inspect 14-Block Dossier →</button>
-          <a href="javascript:void(0)" onclick="openPdfViewer('assets/pdf/drawing_xiku_display_case.pdf', 'Branded Optical Display Case — Xikú Production Drawing')" class="btn-quick-pdf">📄 View PDF Plan</a>
+          <a href="javascript:void(0)" onclick="openPdfViewer('assets/pdf/drawing_devlyn_optical_fixture.pdf', 'Devlyn Display Fixture (2042×2091mm) — Production & Electrical Shop Drawing')" class="btn-quick-pdf">📐 View 2042×2091mm Shop Drawing</a>
         </div>
       </div>
     </article>
@@ -304,9 +304,14 @@
             <div class="spec-box-val">14.8 MB (WebP Fast Delivery)</div>
           </div>
         </div>
-        <a href="#contact" class="btn-secondary" style="font-size: 0.88rem;">
-          Request Custom GLB 3D Submittal Models →
-        </a>
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a href="javascript:void(0)" onclick="openPdfViewer('assets/pdf/drawing_devlyn_optical_fixture.pdf', 'Devlyn Display Fixture — Production & Electrical Shop Drawing (DWG-DEV-2026-E01)')" class="btn-primary" style="font-size: 0.85rem; padding: 0.65rem 1.2rem;">
+            📐 Cross-Reference 2D Shop Drawing (2042×2091mm) →
+          </a>
+          <a href="#contact" class="btn-secondary" style="font-size: 0.85rem; padding: 0.65rem 1.2rem;">
+            Request Custom GLB Submittal Models
+          </a>
+        </div>
       </div>
 
       <div class="model-wrapper">
@@ -699,12 +704,32 @@
         </div>
 
         <div class="modal-section">
-          <div class="modal-section-title">Evidence-First Plan Auditing</div>
+          <div class="modal-section-title">03 • Production Engineering & Electrical Routing (DWG-DEV-2026-E01)</div>
+          <p>Fabrication and electrical routing drawing for the flagship optical display cabinet. Establishes exact 2042×2091×429 mm outer envelope, concealed 24V LED wire drop, counter display glass inserts, and lower drawer carcase integration.</p>
+          
+          <div style="background: #0d0e12; padding: 0.85rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); margin: 1.25rem 0; text-align: center;">
+            <img src="assets/images/drawing_devlyn_fixture_electrical.png" alt="Devlyn Optical Fixture Electrical & Joinery Shop Drawing" style="max-width: 100%; height: auto; border-radius: var(--radius-sm); cursor: zoom-in;" class="zoomable" data-zoom="assets/images/drawing_devlyn_fixture_electrical.png" data-caption="Devlyn Flagship Optical Display Fixture (2042 × 2091 × 429 mm) — Electrical Chase Diagram, LED Profiles & Joinery Detailing">
+            <div style="font-size: 0.8rem; color: var(--primary); margin-top: 0.6rem; font-weight: 600;">🔍 Click image to inspect full-resolution shop drawing</div>
+          </div>
+
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item"><div class="modal-meta-label">Overall Dimensions</div><div class="modal-meta-val">2042 mm W × 2091 mm H × 429 mm D</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Tempered Glazing</div><div class="modal-meta-val">3x Panes (574×274 mm) • 50/66/65 mm Reveals</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">LED Channels</div><div class="modal-meta-val">1963 mm Header + 1788 mm Shelves (4000K)</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Wire Run Elevations</div><div class="modal-meta-val">10 Shelves (189, 414, 628 ... 2051 mm)</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Power Supply Location</div><div class="modal-meta-val">Concealed Sub-Plinth Below Drawers (300 mm)</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Lower Storage</div><div class="modal-meta-val">6 Modular Soft-Close Drawers (651 mm W)</div></div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">Evidence-First Plan Auditing & Tolerance Management</div>
           <p>Architectural plans from retail malls frequently contain conflicting drywall dimensions. Under our <em>Fail-Closed</em> rule, ambiguous callouts triggered formal RFIs rather than shop guesses, completely eliminating on-site saw cuts and preventing thousands of dollars in re-cuts.</p>
         </div>
 
         <div class="modal-actions">
-          <button class="btn-primary" onclick="openPdfViewer('assets/pdf/drawing_xiku_display_case.pdf', 'Branded Optical Display Case — Xikú Production Drawing')">Open Xikú Shop Drawing (PDF)</button>
+          <button class="btn-primary" onclick="openPdfViewer('assets/pdf/drawing_devlyn_optical_fixture.pdf', 'Devlyn Display Fixture — Production & Electrical Shop Drawing (DWG-DEV-2026-E01)')">📐 Open Vector Shop Drawing (PDF)</button>
+          <button class="btn-secondary" onclick="openPdfViewer('assets/pdf/drawing_xiku_display_case.pdf', 'Branded Optical Display Case — Xikú Production Drawing')">📄 View Xikú Submittal Plan</button>
           <button class="btn-secondary" data-modal-close>Close Dossier</button>
         </div>
       </div>
