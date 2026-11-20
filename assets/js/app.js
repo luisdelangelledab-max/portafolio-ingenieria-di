@@ -193,3 +193,66 @@ function initSmoothScroll() {
     });
   });
 }
+
+// 7. Modo de Comparación (Slider vs Side-by-Side Dual View)
+window.setComparisonMode = function(mode) {
+  const sliderEl = document.getElementById('comparison-slider');
+  const sideEl = document.getElementById('comparison-side');
+  const btnSlider = document.getElementById('btn-mode-slider');
+  const btnSide = document.getElementById('btn-mode-side');
+
+  if (mode === 'side') {
+    if (sliderEl) sliderEl.style.display = 'none';
+    if (sideEl) sideEl.style.display = 'grid';
+    if (btnSlider) { btnSlider.classList.remove('active'); btnSlider.style.borderColor = 'var(--border-subtle)'; }
+    if (btnSide) { btnSide.classList.add('active'); btnSide.style.borderColor = 'var(--primary)'; }
+  } else {
+    if (sliderEl) sliderEl.style.display = 'block';
+    if (sideEl) sideEl.style.display = 'none';
+    if (btnSlider) { btnSlider.classList.add('active'); btnSlider.style.borderColor = 'var(--primary)'; }
+    if (btnSide) { btnSide.classList.remove('active'); btnSide.style.borderColor = 'var(--border-subtle)'; }
+  }
+};
+
+// 8. Lightbox de Alta Resolución para Renders y Capturas Técnicas
+window.openLightbox = function(src, caption) {
+  const modal = document.getElementById('lightbox-modal');
+  const img = document.getElementById('lightbox-img');
+  const cap = document.getElementById('lightbox-caption');
+
+  if (modal && img) {
+    img.src = src;
+    if (cap) cap.textContent = caption || '';
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+};
+
+window.closeLightbox = function() {
+  const modal = document.getElementById('lightbox-modal');
+  const img = document.getElementById('lightbox-img');
+  if (modal) {
+    modal.style.display = 'none';
+    if (img) img.src = '';
+    document.body.style.overflow = '';
+  }
+};
+
+// Auto-enlazar elementos con clase .zoomable
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('img.zoomable').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => {
+      const src = img.getAttribute('data-zoom') || img.src;
+      const cap = img.getAttribute('data-caption') || img.alt || '';
+      window.openLightbox(src, cap);
+    });
+  });
+
+  // Tecla Escape para lightbox
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      window.closeLightbox();
+    }
+  });
+});

@@ -27,6 +27,7 @@
         <li><a href="#viewer-3d" class="nav-link">3D Inspection</a></li>
         <li><a href="#comparison" class="nav-link">DFM & Detailing</a></li>
         <li><a href="#stack" class="nav-link">Machinery & Stack</a></li>
+        <li><a href="#renders" class="nav-link">Renders</a></li>
         <li><a href="#contact" class="nav-btn">Get in Touch</a></li>
       </ul>
     </div>
@@ -142,7 +143,7 @@
     <!-- CASE 02 -->
     <article class="case-card" data-category="cad-cam">
       <div class="case-thumbnail">
-        <img src="assets/images/cabinet_vision_clash.png" alt="Cabinet Vision CNC Automation">
+        <img src="assets/images/cabinet_vision_s2m_nesting.jpg" alt="Cabinet Vision CNC S2M Optimization & Nesting Sheet — MDF Avellana 15mm" class="zoomable" data-zoom="assets/images/cabinet_vision_s2m_nesting.jpg" data-caption="Cabinet Vision S2M Nesting Sheet (MDF Avellana 15mm) — CNC Part Optimization & Tooling Allocation">
         <span class="case-badge-top">CAD/CAM & CNC</span>
         <span class="case-badge-right">14/14 BLOCKS</span>
       </div>
@@ -223,7 +224,7 @@
     <!-- CASE 05 -->
     <article class="case-card" data-category="retail cad-cam">
       <div class="case-thumbnail">
-        <img src="assets/images/retail_cash_wrap.png" alt="Hospitality & Corporate Millwork">
+        <img src="assets/images/executive_desk_hospitality_office.jpg" alt="Executive Wood Desk & Hospitality Office System" class="zoomable" data-zoom="assets/images/executive_desk_hospitality_office.jpg" data-caption="Executive Curved Edge Oak Desk & Credenza System — Architectural Hospitality & Corporate Workstation">
         <span class="case-badge-top">HOSPITALITY & OFFICE</span>
         <span class="case-badge-right">14/14 BLOCKS</span>
       </div>
@@ -250,7 +251,7 @@
     <!-- CASE 06 -->
     <article class="case-card" data-category="automation">
       <div class="case-thumbnail">
-        <img src="assets/images/texture_full_board.png" alt="Parametric Automation & AI">
+        <img src="assets/images/cabinet_vision_ucs_scripting.jpg" alt="Cabinet Vision User Created Standards (UCS) JavaScript Automation" class="zoomable" data-zoom="assets/images/cabinet_vision_ucs_scripting.jpg" data-caption="Cabinet Vision User Created Standards (UCS) Code Editor — JavaScript Dynamic Joinery & Parametric Automation">
         <span class="case-badge-top">ALGORITHMIC & AI</span>
         <span class="case-badge-right">14/14 BLOCKS</span>
       </div>
@@ -287,20 +288,20 @@
         </p>
         <div class="viewer-specs">
           <div class="spec-box">
-            <div class="spec-box-title">Mesh Geometry</div>
-            <div class="spec-box-val">Calibrated 19mm Shell</div>
+            <div class="spec-box-title">Format & Standard</div>
+            <div class="spec-box-val">glTF 2.0 Binary (.GLB)</div>
           </div>
           <div class="spec-box">
-            <div class="spec-box-title">Joinery System</div>
-            <div class="spec-box-val">Full 32mm System Holes</div>
+            <div class="spec-box-title">Geometry Complexity</div>
+            <div class="spec-box-val">1,094 Components / Solid Assembly</div>
           </div>
           <div class="spec-box">
-            <div class="spec-box-title">PBR Material</div>
-            <div class="spec-box-val">Walnut Veneer & Brass</div>
+            <div class="spec-box-title">Materials Engine</div>
+            <div class="spec-box-val">Opaque PBR Wood & PVC (Zero Glitches)</div>
           </div>
           <div class="spec-box">
-            <div class="spec-box-title">File Size</div>
-            <div class="spec-box-val">&lt; 15 KB (High Speed)</div>
+            <div class="spec-box-title">Optimized Payload</div>
+            <div class="spec-box-val">14.8 MB (WebP Fast Delivery)</div>
           </div>
         </div>
         <a href="#contact" class="btn-secondary" style="font-size: 0.88rem;">
@@ -310,18 +311,24 @@
 
       <div class="model-wrapper">
         <div class="model-overlay-badge">
-          <span>●</span> 3D ROTATABLE
+          <span>●</span> 3D ORBITAL INSPECTION
         </div>
-        <model-viewer src="assets/models/casework_display.glb"
-                      alt="3D Casework Model Inspection"
+        <model-viewer id="main-model-viewer"
+                      src="assets/models/devlyn_display_fixture.glb"
+                      alt="3D Devlyn Optical Retail Fixture & Casework Assembly"
                       auto-rotate
                       camera-controls
-                      shadow-intensity="1.2"
-                      exposure="1.0"
-                      interaction-prompt="auto">
+                      touch-action="pan-y"
+                      bounds="tight"
+                      shadow-intensity="1"
+                      shadow-softness="0.75"
+                      exposure="1.05"
+                      interaction-prompt="auto"
+                      min-camera-orbit="auto auto 5%"
+                      max-camera-orbit="auto auto 300%"
+                      style="width: 100%; height: 560px; outline: none; background: radial-gradient(circle at center, #1c1d22 0%, #101114 100%);">
         </model-viewer>
       </div>
-    </div>
   </section>
 
   <!-- 7. Image Comparison Slider (DFM & Detailing) -->
@@ -333,14 +340,33 @@
         <p>Drag the slider to compare the 4K photorealistic architectural render against the actual manufactured and installed commercial store furniture.</p>
       </div>
 
+      <div class="comparison-controls" style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 1.5rem;">
+        <button class="btn-secondary" id="btn-mode-slider" style="padding: 0.45rem 1rem; font-size: 0.85rem;" onclick="setComparisonMode('slider')">Interactive Split Slider</button>
+        <button class="btn-secondary" id="btn-mode-side" style="padding: 0.45rem 1rem; font-size: 0.85rem;" onclick="setComparisonMode('side')">Side-by-Side Dual View</button>
+      </div>
+
       <div class="comparison-container" id="comparison-slider">
-        <img class="comparison-image" src="assets/images/store_rollout_03.png" alt="As-Built Installed Retail Store">
+        <img class="comparison-image" src="assets/images/devlyn_asbuilt_commercial_store.png" alt="As-Built Installed Retail Store (Devlyn Nationwide Rollout)">
         <div class="comparison-overlay" id="comparison-overlay">
-          <img src="assets/images/retail_vitrine_hero.png" alt="Concept 3D Render">
+          <img src="assets/images/devlyn_concept_render_display.png" alt="Concept 3D Render — Illuminated Optical Display Cabinet">
         </div>
         <div class="comparison-handle" id="comparison-handle">⟷</div>
-        <div class="comparison-label label-left">CONCEPT RENDER (4K)</div>
-        <div class="comparison-label label-right">FABRICATED & INSTALLED STORE</div>
+        <div class="comparison-label label-left">3D CONCEPT RENDER (PRE-FABRICATION)</div>
+        <div class="comparison-label label-right">FABRICATED & INSTALLED STORE (DEVLYN)</div>
+      </div>
+
+      <!-- Side-by-side alternative container -->
+      <div class="comparison-side-by-side" id="comparison-side" style="display: none;">
+        <div class="side-card">
+          <div class="side-badge">CONCEPT 3D RENDER</div>
+          <img src="assets/images/devlyn_concept_render_display.png" alt="Concept 3D Render" class="zoomable" data-zoom="assets/images/devlyn_concept_render_display.png" data-caption="3D Concept Render — Illuminated Optical Display Cabinet with Bottom Drawers">
+          <div class="side-caption">Pre-fabrication 3D Visualization: LED shelf integration, shadow lines, and material definition.</div>
+        </div>
+        <div class="side-card">
+          <div class="side-badge">AS-BUILT INSTALLED REALITY</div>
+          <img src="assets/images/devlyn_asbuilt_commercial_store.png" alt="As-Built Commercial Reality" class="zoomable" data-zoom="assets/images/devlyn_asbuilt_commercial_store.png" data-caption="As-Built Commercial Reality — Installed Retail Store Fixture (Devlyn Rollout)">
+          <div class="side-caption">Manufactured & Installed Reality: Nationwide optical retail store delivered to exact millimeter tolerances.</div>
+        </div>
       </div>
     </div>
   </section>
@@ -387,6 +413,155 @@
     </div>
   </section>
 
+
+  <!-- 8.5. Selected Architectural & Furniture Renders Gallery -->
+  <section id="renders" class="renders-section">
+    <div class="renders-wrapper">
+      <div class="renders-header">
+        <div class="hero-tag" style="margin-bottom: 0.75rem;">SPATIAL VISUALIZATION</div>
+        <h2>Selected Architectural & Furniture Renders</h2>
+        <p>Photorealistic 3D rendering and detailing studies for high-end residential millwork, hospitality venues, and corporate environments. Demonstrating lighting integration, texture fidelity, and craftsmanship prior to shop floor release.</p>
+        <div class="renders-disclaimer">
+          <span class="disclaimer-badge">3D CONCEPT VISUALIZATION</span>
+          <span>The works below represent digital architectural and furniture rendering studies developed to evaluate geometry, joinery, and lighting behavior.</span>
+        </div>
+      </div>
+
+      <div class="renders-grid">
+        <!-- RENDER 01 (Span 8: Featured Bar Credenza) -->
+        <article class="render-card span-8">
+          <div class="render-media">
+            <img src="assets/images/render_01_bar_credenza.jpg" alt="Custom Architectural Wet Bar & Wine Display Credenza" loading="lazy" class="zoomable" data-zoom="assets/images/render_01_bar_credenza.jpg" data-caption="01 • Custom Architectural Wet Bar & Wine Display Credenza — Fluted Oak Backing, Under-Counter Wine Rack, Integrated Beverage Center & Concealed LED Coves">
+            <div class="render-overlay">
+              <span class="render-pos">01 / 06</span>
+              <button class="btn-zoom-icon" title="Expand View" onclick="openLightbox('assets/images/render_01_bar_credenza.jpg', '01 • Custom Architectural Wet Bar & Wine Display Credenza')">🔍 Zoom</button>
+            </div>
+          </div>
+          <div class="render-info">
+            <div class="render-cat">HOSPITALITY & RESIDENTIAL MILLWORK</div>
+            <h3 class="render-title">Custom Architectural Wet Bar & Wine Display Credenza</h3>
+            <p class="render-desc">Fluted oak paneling backdrop, warm 2700K concealed cove lighting, glass door display cabinet with brass shelf hardware, integrated wine bottle rack, and under-counter beverage cooler envelope.</p>
+            <div class="render-meta">
+              <span class="tag">Fluted Oak Paneling</span>
+              <span class="tag">Concealed 24V LED</span>
+              <span class="tag">Wine Storage</span>
+              <span class="tag">Solid Surface Counter</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- RENDER 02 (Span 4: Vertical Light Wood Credenza) -->
+        <article class="render-card span-4 vertical-card">
+          <div class="render-media">
+            <img src="assets/images/render_02_light_wood_credenza_vertical.jpg" alt="Minimalist White Oak Sideboard & Architectural Art Niche" loading="lazy" class="zoomable" data-zoom="assets/images/render_02_light_wood_credenza_vertical.jpg" data-caption="02 • Minimalist White Oak Sideboard & Architectural Art Niche — Continuous Grain Mitered Waterfall Edge, Push-to-Open Reveal Doors & Floor-to-Ceiling Glazing Daylight Study">
+            <div class="render-overlay">
+              <span class="render-pos">02 / 06</span>
+              <button class="btn-zoom-icon" title="Expand View" onclick="openLightbox('assets/images/render_02_light_wood_credenza_vertical.jpg', '02 • Minimalist White Oak Sideboard & Architectural Art Niche')">🔍 Zoom</button>
+            </div>
+          </div>
+          <div class="render-info">
+            <div class="render-cat">MINIMALIST LIVING & CASEWORK</div>
+            <h3 class="render-title">Minimalist White Oak Sideboard & Architectural Art Niche</h3>
+            <p class="render-desc">Continuous grain mitered waterfall gables, shadow reveal push-to-open doors, and natural sun angle daylighting study through full-height garden glazing.</p>
+            <div class="render-meta">
+              <span class="tag">Mitered Waterfall</span>
+              <span class="tag">White Oak Veneer</span>
+              <span class="tag">Daylight Study</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- RENDER 03 (Span 6: Residential Kitchen L) -->
+        <article class="render-card span-6">
+          <div class="render-media">
+            <img src="assets/images/render_03_residential_kitchen_l.jpg" alt="Contemporary L-Shaped Residential Kitchen System" loading="lazy" class="zoomable" data-zoom="assets/images/render_03_residential_kitchen_l.jpg" data-caption="03 • Contemporary L-Shaped Residential Kitchen System — Natural White Oak Lower Cabinetry, Matte White Upper Envelope, Seamless Quartz Countertops & Undermount Sink">
+            <div class="render-overlay">
+              <span class="render-pos">03 / 06</span>
+              <button class="btn-zoom-icon" title="Expand View" onclick="openLightbox('assets/images/render_03_residential_kitchen_l.jpg', '03 • Contemporary L-Shaped Residential Kitchen System')">🔍 Zoom</button>
+            </div>
+          </div>
+          <div class="render-info">
+            <div class="render-cat">CUSTOM RESIDENTIAL CASEWORK</div>
+            <h3 class="render-title">Contemporary L-Shaped Residential Kitchen System</h3>
+            <p class="render-desc">Two-tone architectural casework combining horizontal grain rift-cut oak base cabinets with flush satin white upper boxes. Inset cooktop range and window sill datum coordination.</p>
+            <div class="render-meta">
+              <span class="tag">Two-Tone Casework</span>
+              <span class="tag">Rift White Oak</span>
+              <span class="tag">Cooktop Detailing</span>
+              <span class="tag">Seamless Quartz</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- RENDER 04 (Span 6: Entertainment Wall with TV) -->
+        <article class="render-card span-6">
+          <div class="render-media">
+            <img src="assets/images/render_04_entertainment_wall_tv.jpg" alt="Full-Height Architectural Media Wall & Executive Workstation" loading="lazy" class="zoomable" data-zoom="assets/images/render_04_entertainment_wall_tv.jpg" data-caption="04 • Full-Height Architectural Media Wall & Executive Workstation — Bookmatched Walnut Backing, Concealed 24V LED Light Strips, Dark Aluminum Glazed Vitrines & Integrated Desk">
+            <div class="render-overlay">
+              <span class="render-pos">04 / 06</span>
+              <button class="btn-zoom-icon" title="Expand View" onclick="openLightbox('assets/images/render_04_entertainment_wall_tv.jpg', '04 • Full-Height Architectural Media Wall & Executive Workstation')">🔍 Zoom</button>
+            </div>
+          </div>
+          <div class="render-info">
+            <div class="render-cat">ARCHITECTURAL MEDIA MILLWORK</div>
+            <h3 class="render-title">Full-Height Architectural Media Wall & Integrated Workstation</h3>
+            <p class="render-desc">Full-height walnut slat paneling with flush TV mounting, dark-profile glass vitrines with internal edge-lit shelving, matte graphite lower equipment plinth, and integrated lateral work desk.</p>
+            <div class="render-meta">
+              <span class="tag">Walnut Veneer</span>
+              <span class="tag">Glazed Vitrines</span>
+              <span class="tag">Concealed Wiring</span>
+              <span class="tag">Integrated Desk</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- RENDER 05 (Span 6: Cafeteria & Dining Red Chairs) -->
+        <article class="render-card span-6">
+          <div class="render-media">
+            <img src="assets/images/render_05_cafeteria_dining_red_chairs.jpg" alt="Corporate Dining Hall & Hospitality Food Service Counter" loading="lazy" class="zoomable" data-zoom="assets/images/render_05_cafeteria_dining_red_chairs.jpg" data-caption="05 • Corporate Dining Hall & Hospitality Food Service Counter — Architectural Concrete Wall, Dual Commercial Extraction Hoods, Solid Surface Island & Fluted Wood Accents">
+            <div class="render-overlay">
+              <span class="render-pos">05 / 06</span>
+              <button class="btn-zoom-icon" title="Expand View" onclick="openLightbox('assets/images/render_05_cafeteria_dining_red_chairs.jpg', '05 • Corporate Dining Hall & Hospitality Food Service Counter')">🔍 Zoom</button>
+            </div>
+          </div>
+          <div class="render-info">
+            <div class="render-cat">COMMERCIAL HOSPITALITY & DINING</div>
+            <h3 class="render-title">Corporate Dining Hall & Hospitality Food Service Counter</h3>
+            <p class="render-desc">Multi-zone corporate dining and hospitality environment featuring architectural board-formed concrete walls, suspended wood box cabinetry, dual exhaust hoods, and durable contract cafeteria furniture.</p>
+            <div class="render-meta">
+              <span class="tag">Food Service Casework</span>
+              <span class="tag">Board-Formed Concrete</span>
+              <span class="tag">Contract Seating</span>
+              <span class="tag">AWI Duty Level 3</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- RENDER 06 (Span 6: Open Plan Office) -->
+        <article class="render-card span-6">
+          <div class="render-media">
+            <img src="assets/images/render_06_open_plan_office_workstations.png" alt="Industrial Open-Plan Corporate Workstation System" loading="lazy" class="zoomable" data-zoom="assets/images/render_06_open_plan_office_workstations.png" data-caption="06 • Industrial Open-Plan Corporate Workstation System — Exposed Structural Steel Trusses, Integrated Biophilic Planter Credenzas, Acoustic Partition Screens & Wire Management">
+            <div class="render-overlay">
+              <span class="render-pos">06 / 06</span>
+              <button class="btn-zoom-icon" title="Expand View" onclick="openLightbox('assets/images/render_06_open_plan_office_workstations.png', '06 • Industrial Open-Plan Corporate Workstation System')">🔍 Zoom</button>
+            </div>
+          </div>
+          <div class="render-info">
+            <div class="render-cat">COMMERCIAL WORKPLACE SYSTEMS</div>
+            <h3 class="render-title">Industrial Open-Plan Corporate Workstation System</h3>
+            <p class="render-desc">Bench workstation layout under exposed structural steel truss roof. Integrated biophilic end-cap planter boxes in accent yellow, acoustic divider screens, and centralized raceway wire management.</p>
+            <div class="render-meta">
+              <span class="tag">Workstation Benching</span>
+              <span class="tag">Biophilic Planters</span>
+              <span class="tag">Cable Trays</span>
+              <span class="tag">Acoustic Felt</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- 9. Frictionless Contact Section -->
   <section id="contact" class="contact-section">
     <div class="contact-card">
@@ -396,14 +571,14 @@
         Whether you need an overflow engineer for AWI shop drawing submittals, Cabinet Vision S2M nesting packages, or parametric 3D modeling, I am ready to deliver.
       </p>
       <div class="contact-buttons">
-        <button class="btn-contact-main" onclick="copyContactEmail('luisdelangel.engineering@gmail.com')">
+        <button class="btn-contact-main" onclick="copyContactEmail('luis.delangel.ledab@gmail.com')">
           📋 Copy Direct Email (Instant)
         </button>
-        <a href="https://wa.me/525500000000?text=Hello%20Luis,%20I%20reviewed%20your%20Engineering%20Portfolio%20and%20would%20like%20to%20discuss%20a%20project." 
+        <a href="https://wa.me/525525081651?text=Good%20day%2C%20I'm%20interested%20in%20your%20product%20engineering%20services." 
            target="_blank" rel="noopener" class="btn-contact-alt">
           💬 WhatsApp Direct
         </a>
-        <a href="mailto:luisdelangel.engineering@gmail.com?subject=Inquiry%3A%20Millwork%20Shop%20Drawing%20%26%20CAD%2FCAM%20Services&body=Hello%20Luis%2C%0A%0AWe%20reviewed%20your%20portfolio%20and%20would%20like%20to%20request%20a%20quote%20for%3A%0A-%20Project%20Type%3A%20%5BRetail%20Fixtures%20%2F%20Custom%20Casework%20%2F%20Rollout%5D%0A-%20Estimated%20Timeline%3A%0A-%20CAD%20Platform%3A%20%5BCabinet%20Vision%20%2F%20AutoCAD%20%2F%20Rhino%5D%0A%0AThank%20you!" class="btn-contact-alt">
+        <a href="mailto:luis.delangel.ledab@gmail.com?subject=Product%20Engineering%20Services%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20product%20engineering%20services%20for%20architectural%20millwork%20and%20casework.%20Please%20contact%20me%20with%20additional%20information.%20Thank%20you." class="btn-contact-alt">
           ✉️ Send Inquiry Email
         </a>
       </div>
@@ -412,7 +587,7 @@
 
   <!-- Toast Notification -->
   <div id="toast-notification" class="toast">
-    <span>✓</span> Email copied to clipboard: <strong>luisdelangel.engineering@gmail.com</strong>
+    <span>✓</span> Email copied to clipboard: <strong>luis.delangel.ledab@gmail.com</strong>
   </div>
 
   <!-- 10. MODAL SYSTEM (Full 14-Block Technical Dossiers) -->
@@ -628,6 +803,7 @@
       </div>
     </div>
 
+    
     <!-- MODAL PDF VIEWER (High-Res Vector Inspection) -->
     <div id="pdf-viewer-modal" class="modal-dialog" style="display: none; max-width: 1100px;">
       <div class="modal-header">
@@ -643,6 +819,16 @@
     </div>
 
   </div>
+
+<!-- LIGHTBOX MODAL FOR FULL-RES IMAGE ZOOM -->
+    <div id="lightbox-modal" class="lightbox-modal" style="display: none;">
+      <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+      <div class="lightbox-container">
+        <button class="lightbox-close" onclick="closeLightbox()" title="Close (Esc)">&times;</button>
+        <img id="lightbox-img" src="" alt="Zoomed View">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+      </div>
+    </div>
 
   <!-- 11. Footer -->
   <footer>
