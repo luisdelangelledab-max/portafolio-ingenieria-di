@@ -101,6 +101,7 @@
   <section id="projects" class="filter-section">
     <div class="filter-pills">
       <button class="filter-btn active" data-filter="all">All Disciplines</button>
+      <button class="filter-btn" data-filter="drafting">Technical Drafting & Plans</button>
       <button class="filter-btn" data-filter="retail">Luxury Retail</button>
       <button class="filter-btn" data-filter="cad-cam">Cabinet Vision & CNC</button>
       <button class="filter-btn" data-filter="rollout">Retail Rollout</button>
@@ -271,6 +272,34 @@
         <div class="case-footer">
           <button class="btn-case-detail" data-open-modal="modal-case-06">Inspect 14-Block Dossier →</button>
           <a href="javascript:void(0)" onclick="openPdfViewer('assets/pdf/gantt_incident_report.pdf', 'GanttCraft & Incident Resolution Report')" class="btn-quick-pdf">📄 View Metrics Report</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- CASE 07: PRODUCT ENGINEERING TECHNICAL DOCUMENTATION & SHOP DRAWINGS -->
+    <article class="case-card" data-category="drafting cad-cam rollout">
+      <div class="case-thumbnail" style="background: #0d0e12; display: flex; align-items: center; justify-content: center;">
+        <img src="assets/images/drawing_devlyn_fixture_electrical.png" alt="Product Engineering Technical Documentation & Shop Drawings" class="zoomable" data-zoom="assets/images/drawing_devlyn_fixture_electrical.png" data-caption="Product Engineering Shop Drawing (DWG-DEV-2026-E01) — 2042×2091mm Optical Display Fixture with 4000K LED Routing & Electrical Run Diagram" style="object-fit: contain; width: 100%; height: 100%; padding: 6px;">
+        <span class="case-badge-top">TECHNICAL DRAFTING & DFM</span>
+        <span class="case-badge-right">14/14 BLOCKS</span>
+      </div>
+      <div class="case-content">
+        <h2 class="case-title">Product Engineering Technical Documentation & Submittal Shop Drawings</h2>
+        <div class="case-sub">DWG-DEV-2026-E01 — AWI Standards, LED Chase & Multimaterial Detailing</div>
+        <p class="case-desc">
+          Shop-ready production drawings, MEP conduit routing, and architectural submittal sets. Transforming design intent into clear manufacturing specifications with coordinated elevations, 4000K LED channel datums, glass reveal clearances, and sub-plinth power supply housing.
+        </p>
+        <div class="case-tags">
+          <span class="tag">Shop Drawings</span>
+          <span class="tag">AWI 0641 Standard</span>
+          <span class="tag">Electrical Routing</span>
+          <span class="tag">SELV 24V LED</span>
+          <span class="tag">Glazing Detailing</span>
+          <span class="tag">Submittal Packages</span>
+        </div>
+        <div class="case-footer">
+          <button class="btn-case-detail" data-open-modal="modal-case-07">Inspect 14-Block Dossier →</button>
+          <a href="javascript:void(0)" onclick="openPdfViewer('assets/pdf/drawing_devlyn_optical_fixture.pdf', 'Devlyn Display Fixture — Production & Electrical Shop Drawing (DWG-DEV-2026-E01)')" class="btn-quick-pdf">📐 View Vector PDF Plan</a>
         </div>
       </div>
     </article>
@@ -827,6 +856,57 @@
         </div>
       </div>
     </div>
+
+    <!-- MODAL CASE 07: PRODUCT ENGINEERING TECHNICAL DOCUMENTATION -->
+    <div id="modal-case-07" class="modal-dialog" style="display: none;">
+      <div class="modal-header">
+        <h3 class="modal-title">Product Engineering Technical Documentation & Submittal Shop Drawings</h3>
+        <button class="modal-close" data-modal-close>&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">01 & 02 • Technical Documentation Architecture & Submittal Standards</div>
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item"><div class="modal-meta-label">Standard Compliance</div><div class="modal-meta-val">ANSI/AWI 0641 Custom & Premium Grade</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Drawing Typology</div><div class="modal-meta-val">Fabrication Submittal & Electrical Chase Plan</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Reference Drawing</div><div class="modal-meta-val">DWG-DEV-2026-E01 (Rev 03 Final Release)</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Outer Dimensions</div><div class="modal-meta-val">2,042 mm W × 2,091 mm H × 429 mm D</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Electrical Spec</div><div class="modal-meta-val">Class 2 SELV 24V DC / 4000K Lighting</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Target Audience</div><div class="modal-meta-val">USA Millwork Contractors & General Contractors</div></div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">03 • Featured Shop Drawing: Flagship Optical Display Fixture</div>
+          <p>This drawing exemplifies our complete product engineering package: coordinating multi-material joinery (engineered wood, glass counter vitrines, aluminum extrusions) with precision MEP electrical routing on a single unambiguous sheet.</p>
+          
+          <div style="background: #0d0e12; padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); margin: 1.25rem 0; text-align: center;">
+            <img src="assets/images/drawing_devlyn_fixture_electrical.png" alt="Devlyn Optical Display Fixture Shop Drawing" style="max-width: 100%; height: auto; border-radius: var(--radius-sm); cursor: zoom-in;" class="zoomable" data-zoom="assets/images/drawing_devlyn_fixture_electrical.png" data-caption="Devlyn Display Fixture (DWG-DEV-2026-E01) — 2042×2091×429mm Shop Drawing with 4000K LED Wire Drop Heights & Glass Cut Schedule">
+            <div style="font-size: 0.82rem; color: var(--primary); margin-top: 0.6rem; font-weight: 600;">🔍 Click image to inspect full-resolution shop drawing in Lightbox</div>
+          </div>
+
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item"><div class="modal-meta-label">Fascia Illumination</div><div class="modal-meta-val">1,963 mm Aluminum U-Channel (4000K)</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Shelf LED Runs</div><div class="modal-meta-val">10 Tiers @ 1,788 mm (6x 300 mm End Profiles)</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Wire Run Heights (AFF)</div><div class="modal-meta-val">189, 414, 628, 741, 855 ... 2,051 mm</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Driver Housing</div><div class="modal-meta-val">Concealed Plinth Cavity Below Drawers (300 mm)</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Glass Vitrines</div><div class="modal-meta-val">3x Tempered Glass 574×274 mm (50/66/65mm reveals)</div></div>
+            <div class="modal-meta-item"><div class="modal-meta-label">Lower Storage</div><div class="modal-meta-val">6 Drawers (3 Bays × 2 Rows @ 651 mm W)</div></div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">04 • Shop-Ready Documentation Philosophy</div>
+          <p>Every drawing produced is calibrated for direct shop-floor execution: eliminating contractor guesswork, providing explicit field tolerance callouts, coordinating trade handoffs (carpentry, electrical, glazing), and preventing on-site re-cuts.</p>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn-primary" onclick="openPdfViewer('assets/pdf/drawing_devlyn_optical_fixture.pdf', 'Devlyn Display Fixture — Production & Electrical Shop Drawing (DWG-DEV-2026-E01)')">📐 Open Vector PDF Drawing</button>
+          <button class="btn-secondary" data-modal-close>Close Dossier</button>
+        </div>
+      </div>
+    </div>
+
 
     
     <!-- MODAL PDF VIEWER (High-Res Vector Inspection) -->
